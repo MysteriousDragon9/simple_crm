@@ -1,0 +1,4 @@
+<h1>Customers missing_email</h1>
+<% @customers.each do |customer| %>
+  <%= render partial: "customer", locals: { customer: customer } %>
+<% end %>

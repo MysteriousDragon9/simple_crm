@@ -1,0 +1,13 @@
+.customer-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+.customer-avatar { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; }
+.customer-name { margin: 0 0 .5rem; }
+.customer-meta { color: #555; margin-bottom: .5rem; }
+.customer-notes { color: #333; }

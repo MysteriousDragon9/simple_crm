@@ -1,0 +1,22 @@
+<div class="customer-card">
+  <div class="customer-media">
+    <% if customer.image.attached? %>
+      <%= image_tag customer.image.variant(resize_to_fill: [120, 120]), alt: customer.full_name, class: "customer-avatar" %>
+    <% else %>
+      <%= image_tag "placeholder.png", alt: "No image", class: "customer-avatar" %>
+    <% end %>
+  </div>
+
+  <div class="customer-content">
+    <h3 class="customer-name"><%= customer.full_name %></h3>
+
+    <p class="customer-meta">
+      <strong>Phone:</strong> <%= customer.phone_number.presence || "—" %><br>
+      <strong>Email:</strong> <%= customer.email.presence || "Missing" %>
+    </p>
+
+    <% if customer.notes.present? %>
+      <p class="customer-notes"><%= simple_format(customer.notes) %></p>
+    <% end %>
+  </div>
+</div>

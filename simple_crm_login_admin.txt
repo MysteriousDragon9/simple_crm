@@ -1,5 +1,8 @@
+insert  ip-address/admin
+enter the admin login and password 
 
 AdminUser.create!(email: "admin@example.com", password: "password", password_confirmation: "password")
 
 email:admin@example.com
+
 password:password
